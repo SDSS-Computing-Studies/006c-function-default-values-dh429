@@ -14,3 +14,15 @@ assert title() == "=========\n= Title =\n========="
 (2 points)
 
 """
+
+def title(boxtype = "="):
+    if boxtype == "=":
+        output = "=========\n= Title =\n========="
+    
+    else:
+        output = "*********\n* Title *\n*********"
+    
+    return output
+
+print(title("*"))
+print(title())
